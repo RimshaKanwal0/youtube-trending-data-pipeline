@@ -12,7 +12,7 @@ def lambda_handler(event, context):
         print("📥 Reading raw data from S3...")
         obj = s3.get_object(Bucket=bucket, Key=raw_key)
         df = pd.read_csv(obj['Body'], low_memory=False)
-        print(f"✅ Raw data loaded: {len(df)} rows")
+        print(f" Raw data loaded: {len(df)} rows")
 
         # Clean
         df.drop_duplicates(inplace=True)
@@ -27,13 +27,13 @@ def lambda_handler(event, context):
         ]
         df = df[[col for col in columns_to_keep if col in df.columns]]
 
-        print(f"✅ Cleaned data: {len(df)} rows remaining")
+        print(f" Cleaned data: {len(df)} rows remaining")
 
         # Upload
         csv_buffer = StringIO()
         df.to_csv(csv_buffer, index=False)
         s3.put_object(Bucket=bucket, Key=cleaned_key, Body=csv_buffer.getvalue())
-        print(f"🎉 Done! Cleaned data uploaded to s3://{bucket}/{cleaned_key}")
+        print(f" Done! Cleaned data uploaded to s3://{bucket}/{cleaned_key}")
 
     except Exception as e:
-        print(f"❌ Error: {str(e)}")
+        print(f" Error: {str(e)}")
