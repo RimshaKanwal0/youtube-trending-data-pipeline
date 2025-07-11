@@ -16,7 +16,7 @@ This is my first cloud-native mini project and reflects key skills in data engin
 
 ## 🧱 Architecture
 <img width="1536" height="1024" alt="image" src="https://github.com/user-attachments/assets/4382d38b-dc18-4e39-b233-7a884d7f4e19" />
-##   And - Data Pipeline Flow
+## And - Data Pipeline Flow
 
 ```text
 ┌────────────┐       ┌──────────────┐       ┌─────────────┐       ┌────────────┐
