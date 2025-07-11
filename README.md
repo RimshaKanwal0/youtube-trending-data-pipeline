@@ -1,4 +1,4 @@
-📈 AWS YouTube Data Pipeline with Trending Analytics
+### 📈 AWS YouTube Data Pipeline with Trending Analytics
 
 A serverless end-to-end data pipeline project built entirely on AWS that automates the collection, cleaning, analysis, and visualization of trending YouTube videos from 113 countries. This project demonstrates how to integrate various AWS services like S3, Lambda, EventBridge, Athena, QuickSight, and SES to build a scalable and automated data analytics workflow.
 
@@ -16,22 +16,28 @@ This is my first cloud-native mini project and reflects key skills in data engin
 
 ## 🧱 Architecture
 <img width="1536" height="1024" alt="image" src="https://github.com/user-attachments/assets/4382d38b-dc18-4e39-b233-7a884d7f4e19" />
+## And - Data Pipeline Flow
 
+```text
 ┌────────────┐       ┌──────────────┐       ┌─────────────┐       ┌────────────┐
-│ 12:00 AM   │ ───▶  │ EventBridge  │ ───▶  │  Lambda      │ ───▶  │  S3 Bucket │
-│ (Daily)    │       │ (Scheduler)  │       │ (Clean Data) │       │ (Cleaned/) │
+│ 12:00 AM   │ ───▶  │ EventBridge  │ ───▶  │   Lambda     │ ───▶  │  S3 Bucket │
+│ (Daily)    │       │ (Scheduler)  │       │ (Clean Data) │       │ (cleaned/) │
 └────────────┘       └──────────────┘       └─────────────┘       └────────────┘
-                                                                      
-                                               ▼                            
-                                         ┌──────────────┐                   
-                                         │   Athena     │ ◀── Query Cleaned Data
-                                         └──────────────┘
-                                               ▼
-                                         ┌──────────────┐
-                                         │  QuickSight  │ ◀── Visualize Top Trends
-                                         └──────────────┘
+                                                                   ▲
+                                                                   │
+                                                             Raw CSV from
+                                                           `raw/` folder
 
----
+                                  ▼
+                         ┌────────────────┐
+                         │    Athena      │ ◀── Query Cleaned Data
+                         └────────────────┘
+                                  ▼
+                         ┌────────────────┐
+                         │  QuickSight    │ ◀── Visualize Top Trends
+                         └────────────────┘
+```
+
 
 ## ✅ Project Workflow: End-to-End Steps
 
