@@ -20,8 +20,8 @@ OR
 
 ```text
 ┌────────────┐       ┌──────────────┐       ┌─────────────┐       ┌────────────┐
-│ 12:00 AM   │ ───▶  │ EventBridge  │ ───▶  │   Lambda     │ ───▶  │  S3 Bucket │
-│ (Daily)    │       │ (Scheduler)  │       │ (Clean Data) │       │ (cleaned/) │
+│ 12:00 AM   │ ───▶ │ EventBridge  │ ───▶  │   Lambda     │ ───▶│  S3 Bucket │
+│ (Daily)    │       │ (Scheduler)  │       │ (Clean Data) │      │ (cleaned/) │
 └────────────┘       └──────────────┘       └─────────────┘       └────────────┘
                                                                    ▲
                                                                    │
