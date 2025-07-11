@@ -1,6 +1,7 @@
-# 📊 YouTube Trending Data Pipeline (AWS)
+A serverless end-to-end data pipeline project built entirely on AWS that automates the collection, cleaning, analysis, and visualization of trending YouTube videos from 113 countries. This project demonstrates how to integrate various AWS services like S3, Lambda, EventBridge, Athena, QuickSight, and SES to build a scalable and automated data analytics workflow.
 
-A serverless data pipeline that collects, cleans, queries, and visualizes trending YouTube data using AWS.workflow_diagram.png
+This is my first cloud-native mini project and reflects key skills in data engineering, serverless computing, SQL analytics, and dashboard reporting.
+
 
 ## 🔧 Tools Used
 - **AWS Lambda**: Python script to clean data
