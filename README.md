@@ -50,7 +50,7 @@ Raw YouTube video data is uploaded to an S3 bucket.
 - **Folders:**
   - `raw/` → Original CSV file
   - `cleaned/` → Cleaned output by Lambda
-   - `//dataset_link` → https://www.kaggle.com/datasets/asaniczka/trending-youtube-videos-113-countries
+  - `dataset_link` → https://www.kaggle.com/datasets/asaniczka/trending-youtube-videos-113-countries
 
 ---
 
