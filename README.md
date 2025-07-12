@@ -112,9 +112,12 @@ Amazon QuickSight is used to create dashboards and visuals:
 ## 📸 Screenshots
 > See `quicksight/screenshots/` for visuals.
 Some visuals are displayed below.
-<img width="1920" height="1080" alt="s3_bucket_list" src="https://github.com/user-attachments/assets/a03597c8-2126-44e2-b12d-304eb214fbdd" />
-<img width="1920" height="1080" alt="youtube-trending-rk-2025" src="https://github.com/user-attachments/assets/42fd9050-9820-45c6-a526-44f604e900b2" />
-> <img width="1920" height="1080" alt="top_10_most_liked video analysis" src="https://github.com/user-attachments/assets/9fcf03c7-2031-46eb-aee6-adf44cb28fca" />
+<img width="1920" height="979" alt="s3_bucket_list" src="https://github.com/user-attachments/assets/b46951ca-a93b-4065-90eb-c93a49cde687" />
+<img width="1920" height="970" alt="youtube-trending-rk-2025" src="https://github.com/user-attachments/assets/870a3ad3-8a9b-4b7e-bdcb-1296c140092c" />
+<img width="1920" height="1029" alt="lambda_function" src="https://github.com/user-attachments/assets/37b99847-34e7-4eb4-9c40-42ef5e1ccfd6" />
+<img width="1920" height="973" alt="athena_query" src="https://github.com/user-attachments/assets/b427517a-db09-4b6a-8bb0-536cfe01a18c" />
+<img width="1920" height="1030" alt="top_10_most_liked video analysis" src="https://github.com/user-attachments/assets/f2c70c67-ed63-46d0-9b71-cbbca6c4c689" />
+
 
 
 
